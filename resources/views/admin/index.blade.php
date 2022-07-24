@@ -1,0 +1,91 @@
+@extends('admin.layout.master')
+@section('content2')
+<!-- Main content -->
+<div class="content-wrapper" style="font-family: cursive;">
+	<!-- Page header -->
+	<div class="page-header page-header-default">
+		<div class="page-header-content">
+			<div class="page-title">
+				<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Home</span> - Trang Quản Lý</h4>
+			</div>
+		</div>
+
+		<div class="breadcrumb-line">
+			<ul class="breadcrumb">
+				<li><i class="icon-home2 position-left"></i> Trang chủ</li>
+
+			</ul>
+		</div>
+	</div>
+	<!-- /page header -->
+	<div class="content">
+		<div class="row">
+			<div class="col-12">
+				<div class="panel panel-flat">
+					<div class="panel-body">
+						Chào mừng bạn đến với Trang quản trị tìm Phòng trọ
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Quick stats boxes -->
+		<div class="row">
+			<div class="col-lg-4">
+
+				<!-- Members online -->
+				<a href="admin/thongke">
+				<div class="panel bg-teal-400" style="background-color: #1E90FF">
+					<div class="panel-body">
+						<h3 class="no-margin">Quản lý</h3>
+						Danh sách người dùng
+					</div>
+					<div class="container-fluid">
+						<div id="members-online"></div>
+					</div>
+				</div>
+			</a>
+				<!-- /members online -->
+
+			</div>
+
+			<div class="col-lg-4">
+
+				<!-- Motelroom -->
+				<a href="admin/thongke">
+				<div class="panel bg-pink-400" style="background-color: #0000CD">
+					<div class="panel-body">
+						<h3 class="no-margin">Quản lý</h3>
+						Danh sách phòng trọ
+					</div>
+
+					<div id="server-load"></div>
+				</div>
+			</a>
+				<!-- /current server load -->
+
+			</div>
+			<div class="col-lg-4">
+
+			<!-- Today's report -->
+			<a href="admin/thongke">
+				<div class="panel bg-blue-400" style="background-color: #1E90FF">
+					<div class="panel-body">
+						<h3 class="no-margin">Quản lý</h3>
+						Danh sách Báo cáo
+					</div>
+					<div id="today-revenue"></div>
+				</div>
+			</a>
+			<!-- /today's revenue -->
+
+			</div>
+		</div>
+		<!-- /quick stats boxes -->
+		<!-- Footer -->
+		<div class="footer text-muted">
+			&copy; 2022. <a href="#">Tìm Phòng Trọ</a> by <a href="" target="_blank">Thùy Linh</a>
+		</div>
+		<!-- /footer -->
+	</div>
+</div>
+@endsection
