@@ -9,18 +9,7 @@ use App\Reports;
 class AdminController extends Controller
 {
     public function getIndex(){
-      $total_users_active = User::where('tinhtrang',1)->get()->count();
-      $total_users_deactive = User::where('tinhtrang',0)->get()->count();
-      $total_rooms_approve = Motelroom::where('approve',1)->get()->count();
-      $total_rooms_unapprove = Motelroom::where('approve',0)->get()->count();
-      $reports = Reports::all();
-      return view ('admin.index',[
-        'total_users_active'=>$total_users_active,
-        'total_users_deactive'=>$total_users_deactive,
-        'total_rooms_approve'=>$total_rooms_approve,
-        'total_rooms_unapprove'=>$total_rooms_unapprove,
-        'total_report'=>$reports->count(),
-      ]);
+      return view ('admin.index');
     }
     public function getThongke(){
       $total_users_active = User::where('tinhtrang',1)->get()->count();
